@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\AdminSena\\Documents\\Portafolio\\portasena\\portasena.csproj",
+      "projectUniqueName": "C:\\Users\\AdminSena\\Documents\\GitHub\\root\\portasena\\portasena.csproj",
       "projectName": "portasena",
-      "projectPath": "C:\\Users\\AdminSena\\Documents\\Portafolio\\portasena\\portasena.csproj",
+      "projectPath": "C:\\Users\\AdminSena\\Documents\\GitHub\\root\\portasena\\portasena.csproj",
       "packagesPath": "C:\\Users\\AdminSena\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\AdminSena\\Documents\\Portafolio\\portasena\\obj\\",
+      "outputPath": "C:\\Users\\AdminSena\\Documents\\GitHub\\root\\portasena\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\AdminSena\\AppData\\Roaming\\NuGet\\NuGet.Config"
