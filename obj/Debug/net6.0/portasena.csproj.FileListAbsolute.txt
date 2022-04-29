@@ -1,30 +1,15 @@
-C:\Users\AdminSena\Documents\Portafolio\portasena\bin\Debug\net6.0\portasena.exe
-C:\Users\AdminSena\Documents\Portafolio\portasena\bin\Debug\net6.0\portasena.deps.json
-C:\Users\AdminSena\Documents\Portafolio\portasena\bin\Debug\net6.0\portasena.runtimeconfig.json
-C:\Users\AdminSena\Documents\Portafolio\portasena\bin\Debug\net6.0\portasena.dll
-C:\Users\AdminSena\Documents\Portafolio\portasena\bin\Debug\net6.0\portasena.pdb
-C:\Users\AdminSena\Documents\Portafolio\portasena\obj\Debug\net6.0\portasena.csproj.AssemblyReference.cache
-C:\Users\AdminSena\Documents\Portafolio\portasena\obj\Debug\net6.0\portasena.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\AdminSena\Documents\Portafolio\portasena\obj\Debug\net6.0\portasena.AssemblyInfoInputs.cache
-C:\Users\AdminSena\Documents\Portafolio\portasena\obj\Debug\net6.0\portasena.AssemblyInfo.cs
-C:\Users\AdminSena\Documents\Portafolio\portasena\obj\Debug\net6.0\portasena.csproj.CoreCompileInputs.cache
-C:\Users\AdminSena\Documents\Portafolio\portasena\obj\Debug\net6.0\portasena.dll
-C:\Users\AdminSena\Documents\Portafolio\portasena\obj\Debug\net6.0\refint\portasena.dll
-C:\Users\AdminSena\Documents\Portafolio\portasena\obj\Debug\net6.0\portasena.pdb
-C:\Users\AdminSena\Documents\Portafolio\portasena\obj\Debug\net6.0\portasena.genruntimeconfig.cache
-C:\Users\AdminSena\Documents\Portafolio\portasena\obj\Debug\net6.0\ref\portasena.dll
-C:\Users\AdminSena\Documents\GitHub\root\portasena\bin\Debug\net6.0\portasena.exe
-C:\Users\AdminSena\Documents\GitHub\root\portasena\bin\Debug\net6.0\portasena.deps.json
-C:\Users\AdminSena\Documents\GitHub\root\portasena\bin\Debug\net6.0\portasena.runtimeconfig.json
-C:\Users\AdminSena\Documents\GitHub\root\portasena\bin\Debug\net6.0\portasena.dll
-C:\Users\AdminSena\Documents\GitHub\root\portasena\bin\Debug\net6.0\portasena.pdb
-C:\Users\AdminSena\Documents\GitHub\root\portasena\obj\Debug\net6.0\portasena.csproj.AssemblyReference.cache
-C:\Users\AdminSena\Documents\GitHub\root\portasena\obj\Debug\net6.0\portasena.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\AdminSena\Documents\GitHub\root\portasena\obj\Debug\net6.0\portasena.AssemblyInfoInputs.cache
-C:\Users\AdminSena\Documents\GitHub\root\portasena\obj\Debug\net6.0\portasena.AssemblyInfo.cs
-C:\Users\AdminSena\Documents\GitHub\root\portasena\obj\Debug\net6.0\portasena.csproj.CoreCompileInputs.cache
-C:\Users\AdminSena\Documents\GitHub\root\portasena\obj\Debug\net6.0\portasena.dll
-C:\Users\AdminSena\Documents\GitHub\root\portasena\obj\Debug\net6.0\refint\portasena.dll
-C:\Users\AdminSena\Documents\GitHub\root\portasena\obj\Debug\net6.0\portasena.pdb
-C:\Users\AdminSena\Documents\GitHub\root\portasena\obj\Debug\net6.0\portasena.genruntimeconfig.cache
-C:\Users\AdminSena\Documents\GitHub\root\portasena\obj\Debug\net6.0\ref\portasena.dll
+C:\Users\jhonh\Documents\SENA\Programacion\Segundo trimestre\Portafolio\portasena\bin\Debug\net6.0\portasena.exe
+C:\Users\jhonh\Documents\SENA\Programacion\Segundo trimestre\Portafolio\portasena\bin\Debug\net6.0\portasena.deps.json
+C:\Users\jhonh\Documents\SENA\Programacion\Segundo trimestre\Portafolio\portasena\bin\Debug\net6.0\portasena.runtimeconfig.json
+C:\Users\jhonh\Documents\SENA\Programacion\Segundo trimestre\Portafolio\portasena\bin\Debug\net6.0\portasena.dll
+C:\Users\jhonh\Documents\SENA\Programacion\Segundo trimestre\Portafolio\portasena\bin\Debug\net6.0\portasena.pdb
+C:\Users\jhonh\Documents\SENA\Programacion\Segundo trimestre\Portafolio\portasena\obj\Debug\net6.0\portasena.csproj.AssemblyReference.cache
+C:\Users\jhonh\Documents\SENA\Programacion\Segundo trimestre\Portafolio\portasena\obj\Debug\net6.0\portasena.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\jhonh\Documents\SENA\Programacion\Segundo trimestre\Portafolio\portasena\obj\Debug\net6.0\portasena.AssemblyInfoInputs.cache
+C:\Users\jhonh\Documents\SENA\Programacion\Segundo trimestre\Portafolio\portasena\obj\Debug\net6.0\portasena.AssemblyInfo.cs
+C:\Users\jhonh\Documents\SENA\Programacion\Segundo trimestre\Portafolio\portasena\obj\Debug\net6.0\portasena.csproj.CoreCompileInputs.cache
+C:\Users\jhonh\Documents\SENA\Programacion\Segundo trimestre\Portafolio\portasena\obj\Debug\net6.0\portasena.dll
+C:\Users\jhonh\Documents\SENA\Programacion\Segundo trimestre\Portafolio\portasena\obj\Debug\net6.0\refint\portasena.dll
+C:\Users\jhonh\Documents\SENA\Programacion\Segundo trimestre\Portafolio\portasena\obj\Debug\net6.0\portasena.pdb
+C:\Users\jhonh\Documents\SENA\Programacion\Segundo trimestre\Portafolio\portasena\obj\Debug\net6.0\portasena.genruntimeconfig.cache
+C:\Users\jhonh\Documents\SENA\Programacion\Segundo trimestre\Portafolio\portasena\obj\Debug\net6.0\ref\portasena.dll

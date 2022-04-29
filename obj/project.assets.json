@@ -8,24 +8,30 @@
     "net6.0": []
   },
   "packageFolders": {
-    "C:\\Users\\AdminSena\\.nuget\\packages\\": {}
+    "C:\\Users\\jhonh\\.nuget\\packages\\": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\AdminSena\\Documents\\GitHub\\root\\portasena\\portasena.csproj",
+      "projectUniqueName": "C:\\Users\\jhonh\\Documents\\SENA\\Programacion\\Segundo trimestre\\Portafolio\\portasena\\portasena.csproj",
       "projectName": "portasena",
-      "projectPath": "C:\\Users\\AdminSena\\Documents\\GitHub\\root\\portasena\\portasena.csproj",
-      "packagesPath": "C:\\Users\\AdminSena\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\AdminSena\\Documents\\GitHub\\root\\portasena\\obj\\",
+      "projectPath": "C:\\Users\\jhonh\\Documents\\SENA\\Programacion\\Segundo trimestre\\Portafolio\\portasena\\portasena.csproj",
+      "packagesPath": "C:\\Users\\jhonh\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\jhonh\\Documents\\SENA\\Programacion\\Segundo trimestre\\Portafolio\\portasena\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+      ],
       "configFilePaths": [
-        "C:\\Users\\AdminSena\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\jhonh\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net6.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
