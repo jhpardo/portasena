@@ -11,10 +11,7 @@ public class Reto4
             juegoPPT();
             Console.WriteLine("Volver a jugar: Si(1), No(2)");
             decision = Convert.ToInt32(Console.ReadLine());
-            if (decision != 1)
-            {
-                play = false;
-            }
+            play = decision != 1 ? false : true;
         }
         while (play);
     }
@@ -38,37 +35,11 @@ public class Reto4
 
     string val(int a)
     {
-        if (a == 1)
-        {
-            return ("PIEDRA");
-        }
-        else if (a == 2)
-        {
-            return ("PAPEL");
-        }
-        else if (a == 3)
-        {
-            return ("TIJERA");
-        }
-        else
-        {
-            return ("OPCION INCORRECTA");
-        }
+        return (a == 1) ? "PIEDRA" : (a == 2) ? "PAPEL" : (a == 3) ? "TIJERA" : "OPCION INCORRECTA";
     }
 
     string ganador(int p1, int maq)
     {
-        if (
-            (p1 == 1 && maq == 3) ||
-            (p1 == 2 && maq == 1) ||
-            (p1 == 3 && maq == 2)
-        )
-        {
-            return ("GANADOR P1");
-        }
-        else
-        {
-            return ("GANADOR Maquina");
-        }
+        return ((p1 == 1 && maq == 3) || (p1 == 2 && maq == 1) || (p1 == 3 && maq == 2)) ? "GANADOR P1" : "GANADOR Maquina";
     }
 }

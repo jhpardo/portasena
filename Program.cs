@@ -14,13 +14,19 @@ namespace PortaSena // Note: actual namespace depends on the project name.
             //r2.calcDosis();
 
             Reto3 r3 = new Reto3();
-            //r3.start();
+            r3.start();
 
             Reto4 r4 = new Reto4();
             //r4.start();
 
             Reto5 r5 = new Reto5();
-            r5.superNoe();
+            //r5.startR5();
+
+            Reto6 r6 = new Reto6();
+            //r6.registrar();
+
+            Reto7 r7 = new Reto7();
+           // r7.recargar();
         }
     }
 }

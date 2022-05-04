@@ -1,21 +1,16 @@
 public   class Reto3 {
 
-
     Boolean play = true;
 
     public void start()
     {
         int decision = 1;
-
         do
         {
             juegoLanzar();
             Console.WriteLine("Volver a jugar: Si(1), No(2)");
             decision = Convert.ToInt32(Console.ReadLine());
-            if (decision != 1)
-            {
-                play = false;
-            }
+            play = decision != 1 ? false : true;
         }
         while (play);
     }
@@ -40,37 +35,17 @@ public   class Reto3 {
         Console.WriteLine("- - - - - - - - - - - - - - - - - - - - - - - -");
         Console.WriteLine($"{ganador(p1, maq, moneda)}");
         Console.WriteLine("- - - - - - - - - - - - - - - - - - - - - - - -");
+
     }
 
     string val(int a)
     {
-        if (a == 1)
-        {
-            return ("CARA");
-        }
-        else if (a == 2)
-        {
-            return ("SELLO");
-        }
-        else
-        {
-            return ("OPCION INCORRECTA");
-        }
+       return a == 1 ? "CARA" : a == 2 ? "SELLO" : "OPCION INCORRECTA";
     }
 
     string ganador(int p1, int maq, int moneda)
-    {
-        if ((p1 == moneda) && (maq != moneda))
-        {
-            return ("GANADOR P1");
-        }
-        
-        if((maq == moneda) && (p1 != moneda))
-        {
-            return ("GANADOR Maquina");
-        }
-
-        return "EMPATE";
+    {       
+        return ((p1 == moneda) && (maq != moneda)) ? "GANADOR P1" : ((maq == moneda) && (p1 != moneda)) ? "GANADOR Maquina" : "EMPATE";
     }
-   
+
 }
