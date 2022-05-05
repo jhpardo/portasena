@@ -4,7 +4,8 @@ public class Reto5
     
 
     public void startR5(){
-        Console.WriteLine("Bienvenidos a Supermercados Noé");
+        Console.WriteLine("BIENVENIDOS: RETO 5");
+        Console.WriteLine("Supermercados Noé");
         Console.WriteLine("Por favor ingrese el valor de la compra del cliente");
         valor = Convert.ToDouble(Console.ReadLine());
         valor = superNoe(valor);

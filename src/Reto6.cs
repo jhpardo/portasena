@@ -10,6 +10,7 @@ public class Reto6 {
 
             do
             {
+                Console.WriteLine("BIENVENIDOS: RETO 6");
                 Console.WriteLine("Registrando...");
                 products++;
                 Console.WriteLine($"Ingrese precio del producto #{products}...");
@@ -46,7 +47,6 @@ public class Reto6 {
             Console.WriteLine("Calculando...");
             return true;
         }
-
     }
 
 }

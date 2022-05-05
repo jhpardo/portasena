@@ -1,19 +1,15 @@
 public class Reto7
 {
-    /* double totalDinero = 0;
 
-    double valApostar = 0;
+    playToplay player = new playToplay(); 
+    int contPlays,  winP1,  winMaq, emp;
 
-    int contPlays = 0;
-
-    bool play = true;
-
-    Reto3 r3 = new Reto3();
 
     public void recargar()
     {
+        Console.WriteLine("BIENVENIDOS: RETO 7");
         Console.WriteLine("INGRESA EL TOTAL DE DINERO PARA JUGAR");
-        totalDinero = Convert.ToDouble(Console.ReadLine());
+        player.TotalDinero = Convert.ToDouble(Console.ReadLine());
 
         Console.WriteLine("Presione (1) para iniciar juego");
         int start = Convert.ToInt32(Console.ReadLine());
@@ -30,29 +26,120 @@ public class Reto7
 
     void apostar()
     {
-        Reto6 r6 = new Reto6();
-
         do
         {
+            bool play = true;
             contPlays++;
             do
             {
+                double valApostadoLast = 0;
                 Console.WriteLine("Cuanto dinero quieres apostar ");
-                valApostar = Convert.ToDouble(Console.ReadLine());
-            }
-            while ((r6.vericacion(totalDinero, valApostar)) == false);
+                valApostadoLast = Convert.ToDouble(Console.ReadLine());
 
-            int decision = 1;
-            r3.juegoLanzar(totalDinero, valApostar);
+                Console.WriteLine("DINERO APOSTADO " + valApostadoLast);
+                Console.WriteLine("DINERO QUE APOSTO " + player.ValApostar);
+
+                if (player.Winner == true)
+                {
+                    if (valApostadoLast >= (player.ValApostar * 2))
+                    {
+                        player.ValApostar = valApostadoLast;
+                        Console.WriteLine("Entro??? " + player.ValApostar);
+                    } else if (confirmar(player.TotalDinero, valApostadoLast).Conf == true)
+                    {
+                        player.ValApostar = valApostadoLast * 2;
+                        Console.WriteLine("Entro 2 ??? " + player.ValApostar);
+                    }
+                    
+                } else
+                {
+                    player.ValApostar = valApostadoLast;
+                    Console.WriteLine("Entro 3 ??? " + player.ValApostar);
+                    play = confirmar(player.TotalDinero, player.ValApostar).Conf;
+                }
+   
+            }
+            while (play == false);
+
+        
+            juegoLanzar();
             contPlays++;
             Console.WriteLine("Volver a jugar: Si(1), No(2)");
-            decision = Convert.ToInt32(Console.ReadLine());
-            play = decision != 1 ? false : true;
+            int decision = Convert.ToInt32(Console.ReadLine());
+            player.Conf = decision != 1 ? false : true;
         }
-        while (play);
+        while (player.Conf);
+        Console.WriteLine($"Jugaste un total de {winP1 + winMaq + emp} Tu saldo total es {player.TotalDinero}");
     }
 
-    public void calcApuesta(string ganador, double tDinero, double tApostado)
+     playToplay confirmar(double totalDinero, double valApostar){
+
+        playToplay ptp = new playToplay();
+
+        ptp.ValApostar = valApostar;
+        ptp.TotalDinero = totalDinero;
+
+        if (totalDinero < valApostar){
+            Console.WriteLine("Verifique");
+            ptp.Conf = false;
+        } else {
+            Console.WriteLine("Calculando...");
+            ptp.Conf = true;
+        }
+        return ptp;
+    }
+
+    void juegoLanzar(){
+        
+        Console.WriteLine("RECUERDE QUE DEBE ELEGIR EL NUMERO CORRESPONDIENTE");
+        Console.WriteLine("CARA(1) SELLO(2)");
+
+        int p1 = Convert.ToInt32(Console.ReadLine());
+
+        Random r = new Random();
+        int maq = r.Next(1, 3);
+
+        int moneda = r.Next(1, 3);
+
+        Console.WriteLine($"P1: {val(p1)}");
+        Console.WriteLine($"MAQ: {val(maq)}");
+
+        Console.WriteLine($"EL RESULTADO DE LA MONEDA FUE: {val(moneda)}");
+        Console.WriteLine("- - - - - - - - - - - - - - - - - - - - - - - -");
+        Console.WriteLine($"{ganador(p1, maq, moneda)}");
+        Console.WriteLine("- - - - - - - - - - - - - - - - - - - - - - - -");
+
+        if (ganador(p1, maq, moneda).Equals("GANADOR P1"))
+        {
+            player.TotalDinero += player.ValApostar;
+            player.Winner = true;
+            winP1++; 
+            Console.WriteLine($"Se han jugado {winP1 + winMaq + emp}" + $" el dinero total {player.TotalDinero}");
+        }
+        else if (ganador(p1, maq, moneda).Equals("GANADOR Maquina"))
+        {
+            player.TotalDinero -= player.ValApostar;
+            player.Winner = false;
+            winMaq++;
+            Console.WriteLine($"Se han jugado {winP1 + winMaq + emp}" + $" el dinero total {player.TotalDinero}");
+        } else {
+            player.ValApostar = 0;
+            emp++;
+            Console.WriteLine($"Se han jugado {winP1 + winMaq + emp}" + $" el dinero total {player.TotalDinero}");
+        }
+    }
+
+    string val(int a)
+    {
+       return a == 1 ? "CARA" : a == 2 ? "SELLO" : "OPCION INCORRECTA";
+    }
+
+    string ganador(int p1, int maq, int moneda)
+    {       
+        return ((p1 == moneda) && (maq != moneda)) ? "GANADOR P1" : ((maq == moneda) && (p1 != moneda)) ? "GANADOR Maquina" : "EMPATE";
+    }
+
+    /*public void calcApuesta(string ganador, double tDinero, double tApostado)
     {
         Console.WriteLine("El ganador es borrar  " + ganador);
         if (ganador.Equals("GANADOR P1"))

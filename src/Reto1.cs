@@ -6,6 +6,7 @@ public class Reto1
 
     public void convTemp()
     {
+        Console.WriteLine("BIENVENIDOS: RETO 1");
         Console.WriteLine("Por favor ingrese la temperatura deseada en °F");
         tempF = Convert.ToInt32(Console.ReadLine());
 

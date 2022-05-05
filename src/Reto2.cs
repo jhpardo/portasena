@@ -8,6 +8,7 @@ public class Reto2
 
     public void calcDosis()
     {
+        Console.WriteLine("BIENVENIDOS: RETO 2");
         Console.WriteLine("Por favor inserte la edad del Bebé en meses");
         meses = Convert.ToInt32(Console.ReadLine());
 
