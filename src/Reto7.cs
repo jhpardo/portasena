@@ -36,25 +36,19 @@ public class Reto7
                 Console.WriteLine("Cuanto dinero quieres apostar ");
                 valApostadoLast = Convert.ToDouble(Console.ReadLine());
 
-                Console.WriteLine("DINERO APOSTADO " + valApostadoLast);
-                Console.WriteLine("DINERO QUE APOSTO " + player.ValApostar);
-
                 if (player.Winner == true)
                 {
                     if (valApostadoLast >= (player.ValApostar * 2))
                     {
                         player.ValApostar = valApostadoLast;
-                        Console.WriteLine("Entro??? " + player.ValApostar);
                     } else if (confirmar(player.TotalDinero, valApostadoLast).Conf == true)
                     {
                         player.ValApostar = valApostadoLast * 2;
-                        Console.WriteLine("Entro 2 ??? " + player.ValApostar);
                     }
                     
                 } else
                 {
                     player.ValApostar = valApostadoLast;
-                    Console.WriteLine("Entro 3 ??? " + player.ValApostar);
                     play = confirmar(player.TotalDinero, player.ValApostar).Conf;
                 }
    
@@ -139,21 +133,4 @@ public class Reto7
         return ((p1 == moneda) && (maq != moneda)) ? "GANADOR P1" : ((maq == moneda) && (p1 != moneda)) ? "GANADOR Maquina" : "EMPATE";
     }
 
-    /*public void calcApuesta(string ganador, double tDinero, double tApostado)
-    {
-        Console.WriteLine("El ganador es borrar  " + ganador);
-        if (ganador.Equals("GANADOR P1"))
-        {
-            tDinero += tApostado;
-            r3.WinP1++;
-        }
-        else if (ganador.Equals("GANADOR Maquina"))
-        {
-            tDinero -= tApostado;
-            r3.WinMaq++;
-        }
-
-        Console.WriteLine(tDinero);
-
-    } */
 }
