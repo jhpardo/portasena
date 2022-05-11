@@ -12,6 +12,13 @@ PortaSena // Note: actual namespace depends on the project name.
             while (next == 1)
             {
                 Console.WriteLine("¿Que reto desea ejecutar?");
+                Console.WriteLine("Reto 1: Temperatura Abuelita");
+                Console.WriteLine("Reto 2: Dosis Bebé");
+                Console.WriteLine("Reto 3: Cara y Sello simple");
+                Console.WriteLine("Reto 4: Piedra-Papel-Tijera");
+                Console.WriteLine("Reto 5: Supermercado Noé Basico");
+                Console.WriteLine("Reto 6: Supermercado Noé Completo");
+                Console.WriteLine("Reto 7: Cara y Sello apuestas");
                 int retos = Convert.ToInt32(Console.ReadLine());
 
                 switch (retos)
