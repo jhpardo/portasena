@@ -19,6 +19,8 @@ PortaSena // Note: actual namespace depends on the project name.
                 Console.WriteLine("Reto 5: Supermercado Noé Basico");
                 Console.WriteLine("Reto 6: Supermercado Noé Completo");
                 Console.WriteLine("Reto 7: Cara y Sello apuestas");
+                Console.WriteLine("Reto 8: Notas materia C#");
+                Console.WriteLine("Reto 9: Competencia de natación");
                 int retos = Convert.ToInt32(Console.ReadLine());
 
                 switch (retos)
@@ -50,7 +52,15 @@ PortaSena // Note: actual namespace depends on the project name.
                     case 7:
                         Reto7 r7 = new Reto7();
                         r7.recargar();
-                        break;   
+                        break; 
+                    case 8:
+                        Reto8 r8 = new Reto8();
+                        r8.notas();
+                        break;
+                    case 9:
+                        Reto9 r9 = new Reto9();
+                        r9.competencia();
+                        break;    
                     default:
                         Console.WriteLine("Reto no disponible o no existe...");
                         break;
