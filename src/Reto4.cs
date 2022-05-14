@@ -18,6 +18,7 @@ public class Reto4
 
     public void juegoPPT()
     {
+
         Console.WriteLine("BIENVENIDOS: RETO 4");
         Console.WriteLine("RECUERDE QUE DEBE ELEGIR EL NUMERO CORRESPONDIENTE");
         Console.WriteLine("PIEDRA(1) - PAPEL(2) - TIJERA(3)");
@@ -40,6 +41,6 @@ public class Reto4
 
     string ganador(int p1, int maq)
     {
-        return ((p1 == 1 && maq == 3) || (p1 == 2 && maq == 1) || (p1 == 3 && maq == 2)) ? "GANADOR P1" : "GANADOR Maquina";
+        return ((p1 == maq)) ? "EMPATE" : ((p1 == 1 && maq == 3) || (p1 == 2 && maq == 1) || (p1 == 3 && maq == 2))? "GANADOR P1" : "GANADOR Maquina";
     }
 }
