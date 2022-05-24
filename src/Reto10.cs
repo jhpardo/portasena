@@ -86,7 +86,7 @@ public class Reto10
 
             if (posProd.Equals("X") || posProd.Equals("x") ){
                 isPlaying = false; 
-            }else if (posProd.Length != 2){
+            }else if ((((int)Char.GetNumericValue(posProd[1])) >3 || ((int)Char.GetNumericValue(posProd[0])) >3) || posProd.Length != 2){
                 isPlaying = true;
             } else {
                 isPlaying = false;
@@ -100,25 +100,6 @@ public class Reto10
 
         string compra;
         double costoCompra;
-
-        Console.WriteLine($"Tamaño 1: {productos.GetLength(0)} - 2: {productos.GetLength(0)}");
-
-/*
-        int[,] a = new int[17, 2];
-            int i = a.Rank;
-            for(int x = 0; x < i; x++)
-            {
-                Console.WriteLine(a.GetLength(x));
-            }
-*/
-
-//Validar error si da una longitud de matrix equivocada con la 
-//linea 104 donde se tiene que confirmar los 2 numeros que ingresan sean menores o iguales a cada uno del tamaño
-
-
-
-
-
 
         if (prod.Length == 2)
         {
@@ -136,7 +117,7 @@ public class Reto10
                 Console.WriteLine($"{compra} ¡ADQUIRIDO!");
                 Console.WriteLine($"Su cambio es: {cambio}");
             } else{
-                Console.WriteLine("Dinero insuficiente. **Vuelva a intentar");
+                Console.WriteLine("Dinero insuficiente. Vuelva a intentar");
             }
         } 
     }
